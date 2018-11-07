@@ -19,7 +19,8 @@ var banner = [
     ' * Author <%= pkg.author %>',
     ' * Link <%= pkg.homepage %>',
     ' * License <%= pkg.license %>',
-    ' */'].join('\n');
+    ' */',
+    ''].join('\n');
 
 var configs = {
     autoprefixer: {
