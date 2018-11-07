@@ -1,8 +1,8 @@
 {
     "name": "@sukka/markdown.css",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "The simple CSS to replicate the GitHub Markdown style (Sukka Ver.)",
-    "main": "dist/md.min.css",
+    "main": "dist/markdown.min.css",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
