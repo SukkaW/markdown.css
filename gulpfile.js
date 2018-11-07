@@ -46,8 +46,8 @@ gulp.task('build', () => {
         .pipe(header(banner, { pkg: pkg }))
         .pipe(autoprefixer(configs.autoprefixer))
         .pipe(csscomb())
-        .pipe(csslint())
         .pipe(csslint.formatter())
+        .pipe(csslint())
         .pipe(gulp.dest('./dist'))
         .pipe(cleancss(configs.cleanCSS))
         .pipe(rename({
