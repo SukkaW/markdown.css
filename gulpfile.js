@@ -1,17 +1,17 @@
-var gulp = require('gulp');
-var cleancss = require('gulp-clean-css');
-var csscomb = require('gulp-csscomb');
-var csslint = require('gulp-csslint');
-var rename = require('gulp-rename');
-var header = require('gulp-header');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
+let gulp = require('gulp');
+let cleancss = require('gulp-clean-css');
+let csscomb = require('gulp-csscomb');
+let csslint = require('gulp-csslint');
+let rename = require('gulp-rename');
+let header = require('gulp-header');
+let autoprefixer = require('gulp-autoprefixer');
+let del = require('del');
 
 var paths = {
     source: './src/*.css'
 };
 
-var pkg = require('./package.json');
+let pkg = require('./package.json');
 
 var banner = [
     '/*!',
@@ -39,7 +39,7 @@ var configs = {
 };
 
 gulp.task('watch', function () {
-    gulp.watch(paths.source, gulp.parallel('build'));
+    gulp.watch(paths.source, gulp.parallel('clean', 'build'));
 });
 
 gulp.task('build', () => {
@@ -57,4 +57,10 @@ gulp.task('build', () => {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', gulp.parallel('build'));
+gulp.task('clean', () => {
+    return del([
+        'dist/**/*',
+    ]);
+})
+
+gulp.task('default', gulp.parallel('clean', 'build'));
