@@ -1,10 +1,10 @@
 .markdown-body {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    color: #24292e;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    color: #24292e;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
     word-wrap: break-word;
 }
 
@@ -21,18 +21,20 @@
 }
 
 .markdown-body [type="checkbox"] {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 }
 
 .markdown-body * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .markdown-body input {
-    font: inherit;
     margin: 0;
     overflow: visible;
+    font: inherit;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
@@ -53,15 +55,16 @@
 }
 
 .markdown-body hr {
+    height: .25em;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    overflow: hidden;
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid #eee;
-    height: 0.25em;
     padding: 0;
     margin: 24px 0;
+    overflow: hidden;
+    background: transparent;
     background-color: #e1e4e8;
+    border: 0;
+    border-bottom: 1px solid #eee;
 }
 
 .markdown-body hr::before {
@@ -110,8 +113,8 @@
 
 .markdown-body .octicon {
     display: inline-block;
-    fill: currentColor;
     vertical-align: text-bottom;
+    fill: currentColor;
 }
 
 .markdown-body::before {
@@ -161,17 +164,17 @@
 }
 
 .markdown-body blockquote {
-    margin: 0;
     padding: 0 1em;
+    margin: 0;
     color: #6a737d;
-    border-left: 0.25em solid #dfe2e5;
+    border-left: .25em solid #dfe2e5;
 }
 
-.markdown-body blockquote>:first-child {
+.markdown-body blockquote> :first-child {
     margin-top: 0;
 }
 
-.markdown-body blockquote>:last-child {
+.markdown-body blockquote> :last-child {
     margin-bottom: 0;
 }
 
@@ -212,18 +215,18 @@
 .markdown-body h6 {
     margin-top: 24px;
     margin-bottom: 16px;
-    line-height: 1.25;
     font-weight: 600;
+    line-height: 1.25;
 }
 
 .markdown-body h1 {
-    padding-bottom: 0.3em;
+    padding-bottom: .3em;
     font-size: 2em;
     border-bottom: 1px solid #eaecef;
 }
 
 .markdown-body h2 {
-    padding-bottom: 0.3em;
+    padding-bottom: .3em;
     font-size: 1.5em;
     border-bottom: 1px solid #eaecef;
 }
@@ -237,11 +240,11 @@
 }
 
 .markdown-body h5 {
-    font-size: 0.875em;
+    font-size: .875em;
 }
 
 .markdown-body h6 {
-    font-size: 0.85em;
+    font-size: .85em;
     color: #6a737d;
 }
 
@@ -262,7 +265,7 @@
 }
 
 .markdown-body li+li {
-    margin-top: 0.25em;
+    margin-top: .25em;
 }
 
 .markdown-body dl {
@@ -283,11 +286,11 @@
 }
 
 .markdown-body table {
-    border-spacing: 0;
-    border-collapse: collapse;
     display: block;
     width: 100%;
     overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 .markdown-body table th {
@@ -310,10 +313,11 @@
 }
 
 .markdown-body img {
-    border-style: none;
     max-width: 100%;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     background-color: #fff;
+    border-style: none;
 }
 
 .markdown-body img[align=right] {
@@ -325,10 +329,10 @@
 }
 
 .markdown-body code {
-    padding: 0.2em 0.4em;
+    padding: .2em .4em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(27, 31, 35, 0.05);
+    background-color: rgba(27, 31, 35, .05);
     border-radius: 3px;
 }
 
@@ -388,6 +392,7 @@
     border: solid 1px #d1d5da;
     border-bottom-color: #c6cbd1;
     border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 #c6cbd1;
     box-shadow: inset 0 -1px 0 #c6cbd1;
 }
 
@@ -406,6 +411,6 @@
 }
 
 .markdown-body .task-list-item input {
-    margin: 0 0.2em 0.25em -1.6em;
+    margin: 0 .2em .25em -1.6em;
     vertical-align: middle;
 }
