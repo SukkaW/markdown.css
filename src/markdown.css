@@ -83,8 +83,17 @@
 .markdown-body ul,
 .markdown-body ol {
     padding-left: 0;
+    margin-left: 14px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.markdown-body ul {
+    list-style: disc inside;
+}
+
+.markdown-body ol {
+    list-style: decimal inside;
 }
 
 .markdown-body ol ol,
@@ -151,8 +160,6 @@
 
 .markdown-body p,
 .markdown-body blockquote,
-.markdown-body ul,
-.markdown-body ol,
 .markdown-body dl,
 .markdown-body table,
 .markdown-body pre {
@@ -251,6 +258,12 @@
 .markdown-body ol ul {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.markdown-body ol li,
+.markdown-body ul li {
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .markdown-body li {
