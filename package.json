@@ -1,6 +1,6 @@
 {
     "name": "@sukka/markdown.css",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "The simple CSS to replicate the GitHub Markdown style (Sukka Ver.)",
     "main": "dist/markdown.min.css",
     "scripts": {
