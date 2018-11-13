@@ -1,5 +1,5 @@
 /*!
- * markdown.css v0.1.4
+ * markdown.css v0.1.5
  * Author SukkaW (https://skk.moe)
  * Link https://github.com/SukkaW/markdown.css#readme
  * License MIT
@@ -179,7 +179,7 @@
 
 .markdown-body blockquote {
     padding: 0 1em;
-    margin: 0;
+    margin: 0 0 16px 0;
     color: #6a737d;
     border-left: .25em solid #dfe2e5;
 }
