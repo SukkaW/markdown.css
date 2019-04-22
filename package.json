@@ -27,7 +27,7 @@
     "homepage": "https://github.com/SukkaW/markdown.css#readme",
     "devDependencies": {
         "del": "4.1.0",
-        "gulp": "4.0.0",
+        "gulp": "4.0.1",
         "gulp-autoprefixer": "6.1.0",
         "gulp-clean-css": "4.0.0",
         "gulp-concat": "2.6.1",
