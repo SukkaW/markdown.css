@@ -17,7 +17,6 @@
 .markdown-body kbd,
 .markdown-body pre {
     font-family: Consolas, "Panic Sans", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Menlo, "Microsoft Yahei", monospace;
-    font-size: 1em;
 }
 
 .markdown-body [type="checkbox"] {
@@ -64,15 +63,14 @@
     border-bottom: 1px solid #eee;
 }
 
-.markdown-body hr::before {
+.markdown-body hr::before,
+.markdown-body hr::after {
     display: table;
     content: "";
 }
 
 .markdown-body hr::after {
-    display: table;
     clear: both;
-    content: "";
 }
 
 .markdown-body td,
@@ -112,26 +110,20 @@
     margin-left: 0;
 }
 
-.markdown-body code,
-.markdown-body pre {
-    font-size: 12px;
-}
-
 .markdown-body .octicon {
     display: inline-block;
     vertical-align: text-bottom;
     fill: currentColor;
 }
 
-.markdown-body::before {
+.markdown-body::before,
+.markdown-body::after {
     display: table;
     content: "";
 }
 
 .markdown-body::after {
-    display: table;
     clear: both;
-    content: "";
 }
 
 .markdown-body>*:first-child {
@@ -159,7 +151,6 @@
 }
 
 .markdown-body p,
-.markdown-body blockquote,
 .markdown-body dl,
 .markdown-body table,
 .markdown-body pre {
